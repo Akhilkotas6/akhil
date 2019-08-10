@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+int inr=0,x,p;
+scanf("%d%d",&x,&p);
+p=100-p;
+while(x>0)
+{
+inr=inr+x;
+x=(p*x)/100;
+}
+printf("%d",inr);
+return 0;
+}
